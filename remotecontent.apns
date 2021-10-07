@@ -1,0 +1,15 @@
+{
+  "aps": {
+    "alert": {
+      "title": "Mobio - Remote Notif Example",
+      "body": "🥳 Woohoo! Push notification in simulator! 🎉",
+      "sound": "default"
+    },
+    "badge": 10
+  },
+  "Simulator Target Bundle": "IOS.ExampleNotification",
+  "navigator": {
+      "screenName": "Home",
+      "type": "goto"
+  }
+}
