@@ -13,6 +13,8 @@
 		A4810015270ED0FC006E8FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4810013270ED0FC006E8FE1 /* Main.storyboard */; };
 		A4810017270ED0FD006E8FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4810016270ED0FD006E8FE1 /* Assets.xcassets */; };
 		A481001A270ED0FD006E8FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4810018270ED0FD006E8FE1 /* LaunchScreen.storyboard */; };
+		A4E13394270FDC4800858C98 /* MyLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E13393270FDC4800858C98 /* MyLocalNotification.swift */; };
+		A4E13398270FE40E00858C98 /* NotificationContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E13397270FE40E00858C98 /* NotificationContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A4810016270ED0FD006E8FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4810019270ED0FD006E8FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A481001B270ED0FD006E8FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E13393270FDC4800858C98 /* MyLocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocalNotification.swift; sourceTree = "<group>"; };
+		A4E13397270FE40E00858C98 /* NotificationContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,18 @@
 				A4810016270ED0FD006E8FE1 /* Assets.xcassets */,
 				A4810018270ED0FD006E8FE1 /* LaunchScreen.storyboard */,
 				A481001B270ED0FD006E8FE1 /* Info.plist */,
+				A4E13396270FE3EF00858C98 /* MyLocalNotif */,
 			);
 			path = ExampleNotification;
+			sourceTree = "<group>";
+		};
+		A4E13396270FE3EF00858C98 /* MyLocalNotif */ = {
+			isa = PBXGroup;
+			children = (
+				A4E13393270FDC4800858C98 /* MyLocalNotification.swift */,
+				A4E13397270FE40E00858C98 /* NotificationContent.swift */,
+			);
+			path = MyLocalNotif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E13398270FE40E00858C98 /* NotificationContent.swift in Sources */,
+				A4E13394270FDC4800858C98 /* MyLocalNotification.swift in Sources */,
 				A4810012270ED0FC006E8FE1 /* ViewController.swift in Sources */,
 				A481000E270ED0FC006E8FE1 /* AppDelegate.swift in Sources */,
 				A4810010270ED0FC006E8FE1 /* SceneDelegate.swift in Sources */,
