@@ -15,6 +15,8 @@
 		A481001A270ED0FD006E8FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4810018270ED0FD006E8FE1 /* LaunchScreen.storyboard */; };
 		A4E13394270FDC4800858C98 /* MyLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E13393270FDC4800858C98 /* MyLocalNotification.swift */; };
 		A4E13398270FE40E00858C98 /* NotificationContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E13397270FE40E00858C98 /* NotificationContent.swift */; };
+		A4B63A9527312B27008074EA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63A9427312B27008074EA /* Navigator.swift */; };
+		A4B63A9927313785008074EA /* MyRemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63A9827313785008074EA /* MyRemoteNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		A481001B270ED0FD006E8FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E13393270FDC4800858C98 /* MyLocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocalNotification.swift; sourceTree = "<group>"; };
 		A4E13397270FE40E00858C98 /* NotificationContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContent.swift; sourceTree = "<group>"; };
+		A4B63A9427312B27008074EA /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		A4B63A9827313785008074EA /* MyRemoteNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRemoteNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		A481000C270ED0FC006E8FE1 /* ExampleNotification */ = {
 			isa = PBXGroup;
 			children = (
+				A4B63A9727313652008074EA /* MyRemoteNotification */,
+				A4B63A9327312AE0008074EA /* Model */,
 				A481000D270ED0FC006E8FE1 /* AppDelegate.swift */,
 				A481000F270ED0FC006E8FE1 /* SceneDelegate.swift */,
 				A4810011270ED0FC006E8FE1 /* ViewController.swift */,
@@ -79,6 +85,22 @@
 				A4E13397270FE40E00858C98 /* NotificationContent.swift */,
 			);
 			path = MyLocalNotif;
+			sourceTree = "<group>";
+		};
+		A4B63A9327312AE0008074EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4B63A9427312B27008074EA /* Navigator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4B63A9727313652008074EA /* MyRemoteNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A4B63A9827313785008074EA /* MyRemoteNotification.swift */,
+			);
+			path = MyRemoteNotification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +176,10 @@
 				A4E13398270FE40E00858C98 /* NotificationContent.swift in Sources */,
 				A4E13394270FDC4800858C98 /* MyLocalNotification.swift in Sources */,
 				A4810012270ED0FC006E8FE1 /* ViewController.swift in Sources */,
+				A4B63A9527312B27008074EA /* Navigator.swift in Sources */,
 				A481000E270ED0FC006E8FE1 /* AppDelegate.swift in Sources */,
 				A4810010270ED0FC006E8FE1 /* SceneDelegate.swift in Sources */,
+				A4B63A9927313785008074EA /* MyRemoteNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
