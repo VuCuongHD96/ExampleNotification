@@ -9,18 +9,18 @@ import UIKit
 import  UserNotifications
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    let myNotification = MyNotification()
-    
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+
+    var window: UIWindow?
+
+    let remoteNotification = MyRemoteNotification()
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        myNotification.registerForPushNotifications()
-        showNotif()
+        
+        remoteNotification.registerForPushNotifications()
+        
+        
+        
         return true
-    }
-    
-    private func showNotif() {
-        let content = NotificationContent(title: "aaaa", body: "bbbb")
-        myNotification.pushNotif(with: content, after: 2)
     }
 }

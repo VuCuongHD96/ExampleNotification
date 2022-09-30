@@ -26,6 +26,10 @@ public class MyLocalNotification: NSObject {
     // MARK: - Init
     private override init() {
         super.init()
+        let openAction = UNNotificationAction(identifier: "open", title: "Open", options: [.foreground])
+        let dismissAction = UNNotificationAction(identifier: UNNotificationDismissActionIdentifier, title: "Dismiss", options: [.destructive])
+        let actionCategory = UNNotificationCategory(identifier: "category", actions: [openAction, dismissAction], intentIdentifiers: [], options: .customDismissAction)
+        center.setNotificationCategories([actionCategory])
     }
 
     // MARK: - Create item
@@ -80,6 +84,9 @@ extension MyLocalNotification: UNUserNotificationCenterDelegate {
     public func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 willPresent notification: UNNotification,
                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        print("---------- Local notif willPresent -------- ")
+        
         completionHandler([.banner, .list, .sound])
     }
 }

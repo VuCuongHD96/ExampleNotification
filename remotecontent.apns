@@ -5,11 +5,8 @@
       "body": "🥳 Woohoo! Push notification in simulator! 🎉",
       "sound": "default"
     },
-    "badge": 10
+    "badge": 10,
+    "category": "category"
   },
-  "Simulator Target Bundle": "IOS.ExampleNotification",
-  "navigator": {
-      "screenName": "Home",
-      "type": "goto"
-  }
+  "Simulator Target Bundle": "IOS.ExampleNotification"
 }

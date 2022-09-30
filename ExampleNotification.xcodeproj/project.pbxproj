@@ -15,7 +15,9 @@
 		A4810015270ED0FC006E8FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4810013270ED0FC006E8FE1 /* Main.storyboard */; };
 		A4810017270ED0FD006E8FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4810016270ED0FD006E8FE1 /* Assets.xcassets */; };
 		A481001A270ED0FD006E8FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4810018270ED0FD006E8FE1 /* LaunchScreen.storyboard */; };
-		A4B63A9527312B27008074EA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63A9427312B27008074EA /* Navigator.swift */; };
+		A4ACF82028E6932600764069 /* MyLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACF81628E6932600764069 /* MyLocalNotification.swift */; };
+		A4ACF82228E6932600764069 /* MyRemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACF81928E6932600764069 /* MyRemoteNotification.swift */; };
+		A4ACF82328E6932600764069 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACF81B28E6932600764069 /* Navigator.swift */; };
 		A4B63A9927313785008074EA /* MyNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63A9827313785008074EA /* MyNotification.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +32,9 @@
 		A4810016270ED0FD006E8FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4810019270ED0FD006E8FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A481001B270ED0FD006E8FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4B63A9427312B27008074EA /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		A4ACF81628E6932600764069 /* MyLocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLocalNotification.swift; sourceTree = "<group>"; };
+		A4ACF81928E6932600764069 /* MyRemoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRemoteNotification.swift; sourceTree = "<group>"; };
+		A4ACF81B28E6932600764069 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		A4B63A9827313785008074EA /* MyNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				A4B63A9727313652008074EA /* MyNotification */,
-				A4B63A9327312AE0008074EA /* Model */,
+				A4ACF81A28E6932600764069 /* Model */,
+				A4ACF81528E6932600764069 /* MyLocalNotif */,
+				A4ACF81828E6932600764069 /* MyRemoteNotification */,
 				A481000D270ED0FC006E8FE1 /* AppDelegate.swift */,
 				A481000F270ED0FC006E8FE1 /* SceneDelegate.swift */,
 				A4810011270ED0FC006E8FE1 /* ViewController.swift */,
@@ -77,10 +83,26 @@
 			path = ExampleNotification;
 			sourceTree = "<group>";
 		};
-		A4B63A9327312AE0008074EA /* Model */ = {
+		A4ACF81528E6932600764069 /* MyLocalNotif */ = {
 			isa = PBXGroup;
 			children = (
-				A4B63A9427312B27008074EA /* Navigator.swift */,
+				A4ACF81628E6932600764069 /* MyLocalNotification.swift */,
+			);
+			path = MyLocalNotif;
+			sourceTree = "<group>";
+		};
+		A4ACF81828E6932600764069 /* MyRemoteNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACF81928E6932600764069 /* MyRemoteNotification.swift */,
+			);
+			path = MyRemoteNotification;
+			sourceTree = "<group>";
+		};
+		A4ACF81A28E6932600764069 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4ACF81B28E6932600764069 /* Navigator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4810012270ED0FC006E8FE1 /* ViewController.swift in Sources */,
-				A4B63A9527312B27008074EA /* Navigator.swift in Sources */,
 				A481000E270ED0FC006E8FE1 /* AppDelegate.swift in Sources */,
 				A401C18D27CC7AFC00C6F15B /* UserNotificationCenterDelegate.swift in Sources */,
+				A4ACF82228E6932600764069 /* MyRemoteNotification.swift in Sources */,
+				A4ACF82328E6932600764069 /* Navigator.swift in Sources */,
+				A4ACF82028E6932600764069 /* MyLocalNotification.swift in Sources */,
 				A4810010270ED0FC006E8FE1 /* SceneDelegate.swift in Sources */,
 				A401C19727CC848100C6F15B /* NotificationContent.swift in Sources */,
 				A4B63A9927313785008074EA /* MyNotification.swift in Sources */,
